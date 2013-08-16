@@ -7,7 +7,7 @@ Python projects. The main goal is to automate configuration tasks and make
 new project setups simple and fast, and systematic changes to a set of similar
 jobs easy.
 
-Unlike `jnekins-cli.jar` which uses JNLP to communicate, `jenkyns` relies on
+Unlike `jenkins-cli.jar` which uses JNLP to communicate, `jenkyns` relies on
 the REST API and thus imposes less preconditions (if Jenkins works in your
 browser, so will the tool).
 
@@ -26,4 +26,15 @@ commands: mkjob, cpjob, mvjob, rmjob
 * locations (map instances names to URLs)
 * job classes (templates)
 
+
+## Contributing
+
+To set up a working directory for the project, follow these steps:
+
+    git clone https://github.com/jhermann/jenkyns.git
+    cd jenkyns
+    virtualenv --no-site-packages .
+    . bin/activate
+    pip install -r requirements.txt
+    paver init
 
