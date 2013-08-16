@@ -55,6 +55,7 @@ project = dict(
     install_requires = [
     ],
     setup_requires = [
+        "docutils",
     ],
     extras_require = {
     },
@@ -72,6 +73,7 @@ project = dict(
         "Development Status :: 3 - Alpha",
         #"Development Status :: 4 - Beta",
         #"Development Status :: 5 - Production/Stable",
+        "Operating System :: OS Independent",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: Apache Software License",
