@@ -30,6 +30,8 @@ To install Jenkyns from source, use these commands:
 Now try to call `jenkyns -h` which should print the command help. If the command is not found,
 `~/bin` might not yet be in your path, enter `exec $SHELL -l` and try to call `jenkyns -h` again.
 
+On Windows, do something similar. ¯\\_(ツ)_/¯
+
 
 ## Using jenkyns
 
