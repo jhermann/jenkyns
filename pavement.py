@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# pylint: disable=wildcard-import, unused-wildcard-import, invalid-name, unused-import
 """ jenkyns - (Python) Jenkins Tools.
 
     jenkyns is a command line tool that helps with the daily management
@@ -93,7 +94,7 @@ project = dict(
 @task
 @needs(["paver.misctasks.generate_setup", "paver.misctasks.minilib", "setuptools.command.develop"])
 def init():
-    """Initial project setup."""
+    """initial project setup"""
     # Fix paver-minilib bug
     import zipfile
     pml = zipfile.ZipFile("paver-minilib.zip", 'a')
@@ -102,6 +103,13 @@ def init():
     except KeyError:
         pml.writestr("paver/version.py", "VERSION='0.0.0'\n")
     pml.close()
+
+
+@task
+def lint():
+    """check code quality"""
+    sh("pylint --rcfile=pylint.cfg pavement " + project["name"])
+    # TODO check return code for errors, else return OK
 
 
 #
