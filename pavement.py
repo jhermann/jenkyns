@@ -94,6 +94,14 @@ project = dict(
 @needs(["paver.misctasks.generate_setup", "paver.misctasks.minilib", "setuptools.command.develop"])
 def init():
     """Initial project setup."""
+    # Fix paver-minilib bug
+    import zipfile
+    pml = zipfile.ZipFile("paver-minilib.zip", 'a')
+    try:
+        pml.getinfo("paver/version.py")
+    except KeyError:
+        pml.writestr("paver/version.py", "VERSION='0.0.0'\n")
+    pml.close()
 
 
 #
