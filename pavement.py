@@ -54,9 +54,11 @@ project = dict(
 
     # dependency management
     install_requires = [
+        "cliff",
     ],
     setup_requires = [
         "docutils",
+        "Sphinx",
     ],
     extras_require = {
     },

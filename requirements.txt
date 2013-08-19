@@ -2,9 +2,16 @@
 # dependency list for pip
 #
 
+# runtime
+cliff >= 1.4.3
+
+# build
+docutils >= 0.11
+Sphinx >= 1.2b1
+
 # essential tools
-Paver>=1.2.1
-pylint>=1.0.0
+Paver >= 1.2.1
+pylint >= 1.0.0
 
 # optional, but helpful
 bpython
