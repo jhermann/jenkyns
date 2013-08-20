@@ -31,13 +31,14 @@ from setuptools import find_packages
 #
 # Project Description
 #
-changelog = path("debian/changelog").text()
+projectdir = path(__file__).dirname().abspath()
+changelog = (projectdir / "debian" / "changelog").text().decode("UTF-8")
 project = dict(
     # project data & layout
     name = changelog.split()[0],
     version = re.search(r"(?<=\()[^)]+(?=\))", changelog).group(),
     package_dir = {"": "src"},
-    packages = find_packages("src", exclude=["tests"]),
+    packages = find_packages(projectdir / "src", exclude=["tests"]),
     test_suite = "nose.collector",
     zip_safe = True,
     include_package_data = True,
@@ -67,10 +68,10 @@ project = dict(
     url = "https://github.com/jhermann/jenkyns",
     license = "Apache License Version 2.0",
     keywords = "python tool cli jenkins continuous.integration",
-    author = "Jürgen Hermann",
+    author = u"Jürgen Hermann",
     author_email = "jh@web.de",
-    description = __doc__.split('.')[0].strip(),
-    long_description = __doc__.split('.', 1)[1].strip(),
+    description = __doc__.split('.')[0].strip().decode("UTF-8"),
+    long_description = __doc__.split('.', 1)[1].strip().decode("UTF-8"),
     classifiers = [
         # values at http://pypi.python.org/pypi?:action=list_classifiers
         "Development Status :: 3 - Alpha",
@@ -112,6 +113,25 @@ def lint():
     """check code quality"""
     sh("pylint --rcfile=pylint.cfg pavement " + project["name"])
     # TODO check return code for errors, else return OK
+
+
+@task
+def doc():
+    """create documentation"""
+    path("doc/api").rmtree()
+    sh("sphinx-apidoc -f -o %s %s " % (
+        projectdir / "doc" / "api",
+        ' '.join([projectdir / "src" / pkg for pkg in project["packages"]]),
+    ))
+    sh("make -f %s html" % (projectdir / "doc" / "ument"))
+
+
+@task
+@needs("doc")
+def browse():
+    """create documentation and view in browser"""
+    import webbrowser
+    webbrowser.open("build/doc/html/index.html")
 
 
 #
