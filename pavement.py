@@ -115,6 +115,10 @@ def lint():
     # TODO check return code for errors, else return OK
 
 
+#
+# Sphinx Documentation
+#
+
 @task
 def doc():
     """create documentation"""
@@ -146,18 +150,22 @@ def publish():
     htmldir = projectdir / "build" / "doc" / "html"
     origin = sh("git config --get remote.origin.url", capture=True).strip()
 
-    workdir.rmtree()
-    shutil.copytree(htmldir, workdir)
+    workdir.rmtree(); workdir.makedirs()
     with pushd(workdir):
+        # Specifically checkout gh-pages
         sh("git init")
         sh("git remote add -t gh-pages -f origin '%s'" % origin)
         sh("git checkout gh-pages")
 
-        for docfile in path(".").walkfiles():
-            if docfile.startswith("./."): continue
-            sh("git add '%s'" % docfile)
-        sh("git add .buildinfo")
+        # Merge updated docs into existing branch
+        for docfile in path(htmldir).walkfiles():
+            dstfile = path(docfile.replace(htmldir, '.'))
+            dstfile.parent.exists() or dstfile.parent.makedirs()
+            shutil.copy2(docfile, dstfile)
+            sh("git add '%s'" % dstfile)
 
+        # Push it!
+        sh("git status")
         sh("git commit -m 'Docs published by paver publish'")
         sh("git push origin gh-pages")
         sh("git status")
