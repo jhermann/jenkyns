@@ -118,11 +118,13 @@ def lint():
 @task
 def doc():
     """create documentation"""
+    # TODO: Use paver.doctools.html
     path("doc/api").rmtree()
     sh("sphinx-apidoc -f -o %s %s " % (
         projectdir / "doc" / "api",
         ' '.join([projectdir / "src" / pkg for pkg in project["packages"]]),
     ))
+    #path("build/doc/html").rmtree()
     sh("make -f %s html" % (projectdir / "doc" / "ument"))
 
 
@@ -132,6 +134,50 @@ def browse():
     """create documentation and view in browser"""
     import webbrowser
     webbrowser.open("build/doc/html/index.html")
+
+
+@task
+@needs("doc")
+def publish():
+    """create documentation and publish to gh-pages branch"""
+    import shutil
+
+    workdir = projectdir / "build" / "gh-pages"
+    htmldir = projectdir / "build" / "doc" / "html"
+    origin = sh("git config --get remote.origin.url", capture=True).strip()
+
+    workdir.rmtree()
+    shutil.copytree(htmldir, workdir)
+    with pushd(workdir):
+        sh("git init")
+        sh("git remote add -t gh-pages -f origin '%s'" % origin)
+        sh("git checkout gh-pages")
+
+        for docfile in path(".").walkfiles():
+            if docfile.startswith("./."): continue
+            sh("git add '%s'" % docfile)
+        sh("git add .buildinfo")
+
+        sh("git commit -m 'Docs published by paver publish'")
+        sh("git push origin gh-pages")
+        sh("git status")
+
+
+@task
+def publish_init():
+    """create orphaned gh-pages branch"""
+    workdir = projectdir / "build" / "gh-pages"
+    origin = sh("git config --get remote.origin.url", capture=True).strip()
+
+    workdir.rmtree()
+    sh("git clone -q '%s' %s" % (origin, workdir))
+    with pushd(workdir):
+        sh("git checkout --orphan gh-pages")
+        sh("git rm -rf .")
+        path(".nojekyll").write_text("Sphinx generated\n")
+        sh("git add .nojekyll")
+        sh("git commit -a -m 'Initialized by paver publish_init'")
+        sh("git push origin gh-pages")
 
 
 #
