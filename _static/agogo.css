@@ -18,7 +18,7 @@ body {
   font-family: "Verdana", Arial, sans-serif;
   line-height: 1.4em;
   color: black;
-  background-color: #eeeeec;
+  background-color: #eee;
 }
 
 
@@ -38,7 +38,7 @@ div.header-wrapper {
 
 /* Default body styles */
 a {
-  color: #ce5c00;
+  color: #005cce;
 }
 
 div.bodywrapper a, div.footer a {
@@ -145,7 +145,7 @@ div.header div.rel {
 }
 
 div.header div.rel a {
-  color: #fcaf3e;
+  color: #3eaffc;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
@@ -298,7 +298,7 @@ div.sidebar li.toctree-l2:last-child a {
 }
 
 div.sidebar li.toctree-l1.current a {
-  border-right: 5px solid #fcaf3e;
+  border-right: 5px solid #3eaffc;
 }
 
 div.sidebar li.toctree-l1.current li.toctree-l2 a {
@@ -325,7 +325,7 @@ div.footer-wrapper {
 }
 
 div.footer, div.footer a {
-  color: #888a85;
+  color: #ccc;
 }
 
 div.footer .right {
