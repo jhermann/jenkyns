@@ -24,7 +24,10 @@ the `jenkyns` tool.
 
 ## Contributing
 
-To set up a working directory for the project, follow these steps:
+Jenkyns is written in Python, and the documentation is generated using Sphinx.
+Paver is used to build and manage the project.
+
+To set up a working directory, follow these steps:
 
     git clone https://github.com/jhermann/jenkyns.git
     cd jenkyns
@@ -32,4 +35,9 @@ To set up a working directory for the project, follow these steps:
     . bin/activate
     pip install -r requirements.txt
     paver init
+
+
+## License
+
+Jenkyns is released under the Apache License 2.0, see LICENSE for details.
 
