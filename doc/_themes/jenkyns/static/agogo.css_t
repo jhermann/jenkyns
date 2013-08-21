@@ -343,8 +343,8 @@ div.footer-wrapper {
   background: {{ theme_footerbg }};
   border-top: 4px solid #babdb6;
   padding-top: 10px;
-  padding-bottom: 10px;
-  min-height: 80px;
+  padding-bottom: 0px;
+  min-height: 2.5em;
 }
 
 div.footer, div.footer a {
