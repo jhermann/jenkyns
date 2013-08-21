@@ -14,7 +14,9 @@ Unlike `jenkins-cli.jar` which uses JNLP to communicate, `jenkyns` relies on
 the REST API and thus imposes less preconditions (if Jenkins works in your
 browser, so will the tool).
 
-[autojenkins](https://github.com/txels/autojenkins) is a similar project.
+[autojenkins](https://github.com/txels/autojenkins) (Python)
+and [jenkins](https://github.com/owainlewis/jenkins) (Clojure)
+are similar projects.
 
 
 ## Documentation
