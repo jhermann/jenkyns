@@ -37,7 +37,8 @@ To set up a working directory, follow these steps:
     pip install -r requirements.txt
     paver init
 
-Jenkyns can also be found on [PyPI](https://pypi.python.org/pypi/jenkyns).
+Jenkyns can also be found on [PyPI](https://pypi.python.org/pypi/jenkyns)
+and [Ohloh](https://www.ohloh.net/p/jenkyns).
 
 
 ## License
