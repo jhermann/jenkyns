@@ -30,6 +30,18 @@ div.header, div.content, div.footer {
   margin-right: auto;
 }
 
+div.footer .left {
+  font-size: 90%;
+}
+
+div.footer .right {
+  font-size: 80%;
+}
+
+div.footer .right div {
+  display: inline;
+}
+
 div.header-wrapper {
   background: url(bgtop.png) top left repeat-x;
   border-bottom: 3px solid #2e3436;
@@ -38,12 +50,35 @@ div.header-wrapper {
 
 /* Default body styles */
 a {
-  color: #005cce;
+  color: #05c;
 }
 
-div.bodywrapper a, div.footer a {
-  text-decoration: underline;
+div.bodywrapper a, div.sidebar a, div.header a, div.footer a {
+  text-decoration: none;
 }
+div.bodywrapper a:hover, div.sidebar a:hover, div.header a:hover, div.footer a:hover {
+  color: #038;
+  text-shadow: #39f 0px 0px 2px;
+}
+
+div.header a, div.footer a {
+  color: #3af;
+}
+div.header a:hover, div.footer a:hover {
+  color: #5bf;
+}
+div.header div.rel a {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+div.header .headertitle a {
+  color: white;
+}
+div.header .headertitle a:hover {
+  color: #ccc;
+}
+
 
 .clearer {
   clear: both;
@@ -87,7 +122,7 @@ h2 {
 
 a.headerlink {
   visibility: hidden;
-  color: #dddddd;
+  color: #ddd;
   padding-left: .3em;
 }
 
@@ -136,18 +171,8 @@ div.header .headertitle {
   margin-bottom: .8em;
 }
 
-div.header .headertitle a {
-  color: white;
-}
-
 div.header div.rel {
   margin-top: 1em;
-}
-
-div.header div.rel a {
-  color: #3eaffc;
-  letter-spacing: .1em;
-  text-transform: uppercase;
 }
 
 p.logo {
@@ -206,6 +231,12 @@ div.document div.highlight {
   margin-top: .8em;
   margin-bottom: .8em;
 }
+div.highlight {
+  margin-left: 2em;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  overflow: auto;
+}
+
 
 div.document h2 {
   margin-top: .7em;
@@ -250,14 +281,6 @@ div.sidebar {
   font-size: .9em;
 }
 
-div.sidebar a, div.header a {
-  text-decoration: none;
-}
-
-div.sidebar a:hover, div.header a:hover {
-  text-decoration: underline;
-}
-
 div.sidebar h3 {
   color: #2e3436;
   text-transform: uppercase;
@@ -298,7 +321,7 @@ div.sidebar li.toctree-l2:last-child a {
 }
 
 div.sidebar li.toctree-l1.current a {
-  border-right: 5px solid #3eaffc;
+  border-right: 5px solid #3af;
 }
 
 div.sidebar li.toctree-l1.current li.toctree-l2 a {

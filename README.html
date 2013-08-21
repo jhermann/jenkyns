@@ -1,0 +1,34 @@
+<h1>Jenkyns</h1>
+
+<h2>Overview</h2>
+
+<p><code>jenkyns</code> (ˈdʒɛŋkaɪnz) is a command line tool that helps with the daily
+management of your Jenkins jobs, implemented using Python and with a
+focus on but not limited to Python projects. The main goal is to automate
+configuration tasks and make new project setups simple and fast, and
+systematic changes to a set of similar jobs easy.</p>
+
+<p>Unlike <code>jenkins-cli.jar</code> which uses JNLP to communicate, <code>jenkyns</code> relies on
+the REST API and thus imposes less preconditions (if Jenkins works in your
+browser, so will the tool).</p>
+
+<h2>Documentation</h2>
+
+<p>The documentation for the current GitHub master source is located at
+<a href="http://jhermann.github.io/jenkyns/">github.io</a>.
+There you will find instructions on how to
+<a href="http://jhermann.github.io/jenkyns/setup.html">install</a> and
+<a href="http://jhermann.github.io/jenkyns/usage.html">use</a>
+the <code>jenkyns</code> tool.</p>
+
+<h2>Contributing</h2>
+
+<p>To set up a working directory for the project, follow these steps:</p>
+
+<pre><code>git clone https://github.com/jhermann/jenkyns.git
+cd jenkyns
+virtualenv --no-site-packages .
+. bin/activate
+pip install -r requirements.txt
+paver init
+</code></pre>
