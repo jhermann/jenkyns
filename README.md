@@ -24,8 +24,9 @@ the `jenkyns` tool.
 
 ## Contributing
 
-Jenkyns is written in Python, and the documentation is generated using Sphinx.
-Paver is used to build and manage the project.
+Jenkyns is written in [Python](http://www.python.org/),
+and the documentation is generated using [Sphinx](https://pypi.python.org/pypi/Sphinx).
+[Paver](https://pypi.python.org/pypi/Paver) is used to build and manage the project.
 
 To set up a working directory, follow these steps:
 
@@ -36,8 +37,10 @@ To set up a working directory, follow these steps:
     pip install -r requirements.txt
     paver init
 
+Jenkyns can also be found on [PyPI](https://pypi.python.org/pypi/jenkyns).
+
 
 ## License
 
-Jenkyns is released under the Apache License 2.0, see LICENSE for details.
+Jenkyns is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), see LICENSE for details.
 
