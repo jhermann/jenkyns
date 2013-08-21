@@ -325,7 +325,7 @@ div.footer-wrapper {
 }
 
 div.footer, div.footer a {
-  color: #888a85;
+  color: {{ theme_footercolor }};
 }
 
 div.footer .right {
