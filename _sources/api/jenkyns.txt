@@ -1,0 +1,19 @@
+jenkyns Package
+===============
+
+:mod:`jenkyns` Package
+----------------------
+
+.. automodule:: jenkyns.__init__
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+:mod:`cli` Module
+-----------------
+
+.. automodule:: jenkyns.cli
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
