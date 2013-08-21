@@ -123,6 +123,7 @@ def lint():
 def doc():
     """create documentation"""
     # TODO: Use paver.doctools.html
+    htmldir = projectdir / "build" / "doc" / "html"
     path("doc/api").rmtree()
     sh("sphinx-apidoc -f -o %s %s " % (
         projectdir / "doc" / "api",
@@ -130,6 +131,7 @@ def doc():
     ))
     #path("build/doc/html").rmtree()
     sh("make -f %s html" % (projectdir / "doc" / "ument"))
+    sh("markdown2 README.md >%s/README.html" % htmldir)
 
 
 @task
