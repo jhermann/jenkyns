@@ -1,5 +1,8 @@
 # Jenkyns
 
+_Keywords:_ jenkins, devops, automation, build pipeline, continuous delivery
+
+
 ## Overview
 `jenkyns` (ˈdʒɛŋkaɪnz) is a command line tool that helps with the daily
 management of your Jenkins jobs, implemented using Python and with a
