@@ -159,6 +159,12 @@ def publish():
 
         # Merge updated docs into existing branch
         for docfile in path(htmldir).walkfiles():
+            # Skip junk files
+            if any(docfile.endswith(i) for i in ("~", ".swp", ".tmp")):
+                continue
+
+            # Copy the updated file and register it for the commit
+            # ("git add" will ignore unchanged files)
             dstfile = path(docfile.replace(htmldir, '.'))
             dstfile.parent.exists() or dstfile.parent.makedirs()
             shutil.copy2(docfile, dstfile)
