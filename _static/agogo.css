@@ -25,7 +25,7 @@ body {
 /* Page layout */
 
 div.header, div.content, div.footer {
-  width: 70em;
+  width: 80em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -77,6 +77,44 @@ div.header .headertitle a {
 }
 div.header .headertitle a:hover {
   color: #ccc;
+}
+
+div.header div.rel {
+  color: #bbb;
+}
+
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 30px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url('./octocat.png') #05d no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+#forkme_banner img {
+  position: relative;
+  margin: 0 auto;
+  max-width: 739px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border: 1px solid #ebebeb;
+
+  box-shadow: 0 0 5px #ebebeb;
+  -webkit-box-shadow: 0 0 5px #ebebeb;
+  -moz-box-shadow: 0 0 5px #ebebeb;
+  -o-box-shadow: 0 0 5px #ebebeb;
+  -ms-box-shadow: 0 0 5px #ebebeb;
+
+  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -136,6 +174,13 @@ dt:hover > a.headerlink {
   visibility: visible;
 }
 
+pre, span.pre {
+  font-family: "DejaVu Sans Mono", "Andale Mono", "Lucida Console", Monaco, monospace;
+}
+span.pre {
+  font-size: 110%;
+}
+
 img {
   border: 0;
 }
@@ -192,7 +237,7 @@ div.content-wrapper {
 }
 
 div.document {
-  width: 50em;
+  width: 57em;
   float: left;
 }
 
@@ -276,7 +321,7 @@ div.document ol {
 /* Sidebar */
 
 div.sidebar {
-  width: 20em;
+  width: 22em;
   float: right;
   font-size: .9em;
 }
@@ -343,8 +388,8 @@ div.footer-wrapper {
   background: url(bgfooter.png) top left repeat-x;
   border-top: 4px solid #babdb6;
   padding-top: 10px;
-  padding-bottom: 10px;
-  min-height: 80px;
+  padding-bottom: 0px;
+  min-height: 2.5em;
 }
 
 div.footer, div.footer a {
