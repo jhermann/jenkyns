@@ -53,13 +53,14 @@ Jenkyns is released under the [Apache License 2.0](https://www.apache.org/licens
 
 **Python**
 
-* [jenkins-webapi](https://github.com/gvalkov/jenkins-webapi)
-* [jenkinsapi](https://github.com/salimfadhley/jenkinsapi)
-* [python-jenkins](https://launchpad.net/python-jenkins)
-
-* [autojenkins](https://github.com/txels/autojenkins),
-* [jenkins-job-builder](https://github.com/openstack-infra/jenkins-job-builder)
-* [jenkins-autojobs](https://github.com/gvalkov/jenkins-autojobs)
+* *API centric*
+  * [jenkins-webapi](https://github.com/gvalkov/jenkins-webapi)
+  * [jenkinsapi](https://github.com/salimfadhley/jenkinsapi)
+  * [python-jenkins](https://launchpad.net/python-jenkins)
+* *Tool centric*
+  * [autojenkins](https://github.com/txels/autojenkins)
+  * [jenkins-job-builder](https://github.com/openstack-infra/jenkins-job-builder)
+  * [jenkins-autojobs](https://github.com/gvalkov/jenkins-autojobs)
 
 
 **Clojure**
