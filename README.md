@@ -14,10 +14,6 @@ Unlike `jenkins-cli.jar` which uses JNLP to communicate, `jenkyns` relies on
 the REST API and thus imposes less preconditions (if Jenkins works in your
 browser, so will the tool).
 
-[autojenkins](https://github.com/txels/autojenkins) (Python)
-and [jenkins](https://github.com/owainlewis/jenkins) (Clojure)
-are similar projects.
-
 
 ## Documentation
 
@@ -51,4 +47,22 @@ and [Ohloh](https://www.ohloh.net/p/jenkyns).
 ## License
 
 Jenkyns is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), see LICENSE for details.
+
+
+## Similar Projects
+
+**Python**
+
+* [jenkins-webapi](https://github.com/gvalkov/jenkins-webapi)
+* [jenkinsapi](https://github.com/salimfadhley/jenkinsapi)
+* [python-jenkins](https://launchpad.net/python-jenkins)
+
+* [autojenkins](https://github.com/txels/autojenkins),
+* [jenkins-job-builder](https://github.com/openstack-infra/jenkins-job-builder)
+* [jenkins-autojobs](https://github.com/gvalkov/jenkins-autojobs)
+
+
+**Clojure**
+
+* [jenkins](https://github.com/owainlewis/jenkins)
 
