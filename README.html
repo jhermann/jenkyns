@@ -1,5 +1,7 @@
 <h1>Jenkyns</h1>
 
+<p><em>Keywords:</em> jenkins, devops, automation, build pipeline, continuous delivery</p>
+
 <h2>Overview</h2>
 
 <p><code>jenkyns</code> (ˈdʒɛŋkaɪnz) is a command line tool that helps with the daily
@@ -23,7 +25,11 @@ the <code>jenkyns</code> tool.</p>
 
 <h2>Contributing</h2>
 
-<p>To set up a working directory for the project, follow these steps:</p>
+<p>Jenkyns is written in <a href="http://www.python.org/">Python</a>,
+and the documentation is generated using <a href="https://pypi.python.org/pypi/Sphinx">Sphinx</a>.
+<a href="https://pypi.python.org/pypi/Paver">Paver</a> is used to build and manage the project.</p>
+
+<p>To set up a working directory, follow these steps:</p>
 
 <pre><code>git clone https://github.com/jhermann/jenkyns.git
 cd jenkyns
@@ -32,3 +38,35 @@ virtualenv --no-site-packages .
 pip install -r requirements.txt
 paver init
 </code></pre>
+
+<p>Jenkyns can also be found on <a href="https://pypi.python.org/pypi/jenkyns">PyPI</a>
+and <a href="https://www.ohloh.net/p/jenkyns">Ohloh</a>.</p>
+
+<h2>License</h2>
+
+<p>Jenkyns is released under the <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a>, see LICENSE for details.</p>
+
+<h2>Similar Projects</h2>
+
+<p><strong>Python</strong></p>
+
+<ul>
+<li><em>API centric</em>
+<ul>
+<li><a href="https://github.com/gvalkov/jenkins-webapi">jenkins-webapi</a></li>
+<li><a href="https://github.com/salimfadhley/jenkinsapi">jenkinsapi</a></li>
+<li><a href="https://launchpad.net/python-jenkins">python-jenkins</a></li>
+</ul></li>
+<li><em>Tool centric</em>
+<ul>
+<li><a href="https://github.com/txels/autojenkins">autojenkins</a></li>
+<li><a href="https://github.com/openstack-infra/jenkins-job-builder">jenkins-job-builder</a></li>
+<li><a href="https://github.com/gvalkov/jenkins-autojobs">jenkins-autojobs</a></li>
+</ul></li>
+</ul>
+
+<p><strong>Clojure</strong></p>
+
+<ul>
+<li><a href="https://github.com/owainlewis/jenkins">jenkins</a></li>
+</ul>
