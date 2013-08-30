@@ -21,12 +21,15 @@ browser, so will the tool).
 
 ## Documentation
 
-The documentation for the current GitHub master source is located at
+The documentation for the current GitHub master source is regularly published to
 [github.io](http://jhermann.github.io/jenkyns/).
 There you will find instructions on how to
 [install](http://jhermann.github.io/jenkyns/setup.html) and
 [use](http://jhermann.github.io/jenkyns/usage.html)
 the `jenkyns` tool.
+
+A [continuously built document tree](http://huschteguzzel.de/hudson/job/jenkyns/doclinks/1/)
+with the latest changes is also available.
 
 
 ## Contributing
