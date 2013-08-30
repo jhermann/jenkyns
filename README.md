@@ -2,6 +2,10 @@
 
 _Keywords:_ jenkins, devops, automation, build pipeline, continuous delivery
 
+| **Travis** | **Jenkins** |
+|:-------------:|:-------------:|
+| [![Travis Status](https://travis-ci.org/jhermann/jenkyns.png?branch=master)](https://travis-ci.org/jhermann/jenkyns) | [![Jenkins Status](http://huschteguzzel.de/hudson/buildStatus/icon?job=jenkyns)](http://huschteguzzel.de/hudson/view/jhermann/job/jenkyns/) |
+
 
 ## Overview
 `jenkyns` (ˈdʒɛŋkaɪnz) is a command line tool that helps with the daily

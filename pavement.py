@@ -197,6 +197,16 @@ def publish_init():
 
 
 #
+# Continuous Integration
+#
+
+@task
+@needs(["build", "doc"])
+def travis_ci():
+    """continuous integration tasks for Travis"""
+
+
+#
 # Call back to Paver
 #
 setup(**project)
