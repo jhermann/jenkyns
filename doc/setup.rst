@@ -45,3 +45,10 @@ Configuration
 * locations (map instances names to URLs)
 * job classes (templates)
 
+To find out your *API Token*, after logging into your Jenkins instance,
+click on the account name in the top right corner,
+and then on *Configure* in the sidebar menu
+(bringing you to an URL like `http://jenkins.example.com/hudson/user/»username«/configure`).
+Click on the *Show API Token…* button in the *API Token* section,
+subsequently copy the displayed value … **TODO**.
+
