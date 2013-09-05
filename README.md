@@ -4,7 +4,7 @@ _Keywords:_ jenkins, devops, automation, build pipeline, continuous delivery
 
 | **Travis** | **Jenkins** |
 |:-------------:|:-------------:|
-| [![Travis Status](https://travis-ci.org/jhermann/jenkyns.png?branch=master)](https://travis-ci.org/jhermann/jenkyns) | [![Jenkins Status](http://huschteguzzel.de/hudson/buildStatus/icon?job=jenkyns)](http://huschteguzzel.de/hudson/view/jhermann/job/jenkyns/) |
+| [![Travis Status](https://travis-ci.org/jhermann/jenkyns.png?branch=master)](https://travis-ci.org/jhermann/jenkyns) | [![Jenkins Status](https://huschteguzzel.de/hudson/buildStatus/icon?job=jenkyns)](https://huschteguzzel.de/hudson/view/jhermann/job/jenkyns/) |
 
 
 ## Overview
@@ -28,7 +28,7 @@ There you will find instructions on how to
 [use](http://jhermann.github.io/jenkyns/usage.html)
 the `jenkyns` tool.
 
-A [continuously built document tree](http://huschteguzzel.de/hudson/job/jenkyns/doclinks/1/)
+A [continuously built document tree](https://huschteguzzel.de/hudson/job/jenkyns/doclinks/1/)
 with the latest changes is also available.
 
 
