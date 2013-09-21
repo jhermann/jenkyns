@@ -1,4 +1,4 @@
-# Jenkyns
+# ![Logo](https://raw.github.com/jhermann/jenkyns/master/doc/_static/jenkyns48.png) Jenkyns
 
 _Keywords:_ jenkins, devops, automation, build pipeline, continuous delivery
 
@@ -73,4 +73,3 @@ Jenkyns is released under the [Apache License 2.0](https://www.apache.org/licens
 **Clojure**
 
 * [jenkins](https://github.com/owainlewis/jenkins)
-
