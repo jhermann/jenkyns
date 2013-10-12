@@ -14,9 +14,8 @@ focus on but not limited to Python projects. The main goal is to automate
 configuration tasks and make new project setups simple and fast, and
 systematic changes to a set of similar jobs easy.
 
-Unlike `jenkins-cli.jar` which uses JNLP to communicate, `jenkyns` relies on
-the REST API and thus imposes less preconditions (if Jenkins works in your
-browser, so will the tool).
+Jenkyns can also be found on [PyPI](https://pypi.python.org/pypi/jenkyns)
+and [Ohloh](https://www.ohloh.net/p/jenkyns).
 
 
 ## Documentation
@@ -34,26 +33,17 @@ with the latest changes is also available.
 
 ## Contributing
 
-Jenkyns is written in [Python](http://www.python.org/),
-and the documentation is generated using [Sphinx](https://pypi.python.org/pypi/Sphinx).
-[Paver](https://pypi.python.org/pypi/Paver) is used to build and manage the project.
-
-To set up a working directory, follow these steps:
-
-    git clone https://github.com/jhermann/jenkyns.git
-    cd jenkyns
-    virtualenv --no-site-packages .
-    . bin/activate
-    pip install -r requirements.txt
-    paver init
-
-Jenkyns can also be found on [PyPI](https://pypi.python.org/pypi/jenkyns)
-and [Ohloh](https://www.ohloh.net/p/jenkyns).
+If you like to submit an enhancement in form of additional documentation or a pull request,
+or find an issue and maybe even have a patch ready for it, please consider the
+[contribution guidelines](/jhermann/jenkyns/blob/master/CONTRIBUTING.md)
+for this project. You can also find instructions on
+*how to quickly set up a working development environment* in that document.
 
 
 ## License
 
-Jenkyns is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), see LICENSE for details.
+Jenkyns is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html),
+see [/jhermann/jenkyns/master/LICENSE](LICENSE) for details.
 
 
 ## Similar Projects

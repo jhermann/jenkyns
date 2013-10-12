@@ -131,7 +131,9 @@ def doc():
     ))
     #path("build/doc/html").rmtree()
     sh("make -f %s html" % (projectdir / "doc" / "ument"))
-    sh("markdown2 README.md >%s/README.html" % htmldir)
+
+    for doc in projectdir.files("*.md"):
+        sh("markdown2 %s >%s/%s.html" % (doc, htmldir, doc.namebase))
 
 
 @task
@@ -210,4 +212,3 @@ def travis_ci():
 # Call back to Paver
 #
 setup(**project)
-
