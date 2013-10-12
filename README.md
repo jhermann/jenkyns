@@ -43,7 +43,7 @@ for this project. You can also find instructions on
 ## License
 
 Jenkyns is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html),
-see [LICENSE](/jhermann/jenkyns/master/LICENSE) for details.
+see [LICENSE](https://raw.github.com/jhermann/jenkyns/master/LICENSE) for details.
 
 
 ## Similar Projects
