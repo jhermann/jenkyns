@@ -37,7 +37,7 @@ with the latest changes is also available.
 
 If you like to submit an enhancement in form of additional documentation or a pull request,
 or find an issue and maybe even have a patch ready for it, please consider the
-[contribution guidelines](/jhermann/jenkyns/blob/master/CONTRIBUTING.md)
+[contribution guidelines](https://github.com/jhermann/jenkyns/blob/master/CONTRIBUTING.md)
 for this project. You can also find instructions on
 *how to quickly set up a working development environment* in that document.
 
