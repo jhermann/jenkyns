@@ -16,6 +16,8 @@ systematic changes to a set of similar jobs easy.
 
 Jenkyns can also be found on [PyPI](https://pypi.python.org/pypi/jenkyns)
 and [Ohloh](https://www.ohloh.net/p/jenkyns).
+It is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html),
+see [LICENSE](https://raw.github.com/jhermann/jenkyns/master/LICENSE) for details.
 
 
 ## Documentation
@@ -38,12 +40,6 @@ or find an issue and maybe even have a patch ready for it, please consider the
 [contribution guidelines](/jhermann/jenkyns/blob/master/CONTRIBUTING.md)
 for this project. You can also find instructions on
 *how to quickly set up a working development environment* in that document.
-
-
-## License
-
-Jenkyns is released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html),
-see [LICENSE](https://raw.github.com/jhermann/jenkyns/master/LICENSE) for details.
 
 
 ## Similar Projects
