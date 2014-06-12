@@ -53,6 +53,7 @@ for this project. You can also find instructions on
 * *Tool centric*
   * [autojenkins](https://github.com/txels/autojenkins)
   * [jenkins-job-builder](https://github.com/openstack-infra/jenkins-job-builder)
+    * [jenkins-buddy](https://github.com/larrycai/jenkins-buddy) ([blog](http://larrycaiyu.com/blog/2014/01/14/extend-jenkins-job-builder/))
   * [jenkins-autojobs](https://github.com/gvalkov/jenkins-autojobs)
 
 
